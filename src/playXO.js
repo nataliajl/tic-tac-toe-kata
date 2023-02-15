@@ -1,5 +1,9 @@
-const generateBlock= () => {
+const generateBlock = () => {
     return ' | | ';
 }
 
-module.exports = { generateBlock };
+const generateSeparator = () => {
+    return '-+-+-';
+}
+
+module.exports = { generateBlock, generateSeparator };
