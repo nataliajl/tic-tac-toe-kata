@@ -12,9 +12,15 @@ TODO:
 - separator between blocks
     | |  - block
    -+-+- - separator
-    | | 
-   -+-+-
-    | | 
+    | |  - block
+   -+-+- - separator
+    | |  - block
+
+- board center is composed of 2 separators and one block 
+   -+-+- - separator
+    | |  - block
+   -+-+- - separator
+
 - played in rounds
 - two players
     - player X
@@ -27,5 +33,12 @@ TODO:
 # Podmodoro 1 🍅:
 - configure environment ✅
 - Define domain ✅
-- should return spaces and | when creating block 🚧
-- should return - and + when creating separator
+- should return " | | " when creating block 🚧
+- should return "-+-+-" when creating separator
+
+# Pomodoro 2 🍅:
+- should return " | | " when creating block ✅
+- should return "-+-+-" when creating separator ✅
+- should return list with "-+-+-", " | | ", "-+-+-" when creating board center ✅
+- refactor generateCenter with generateSeparator and generateBlock ✅
+- should return list with " | | ", "-+-+-", " | | ", "-+-+-", " | | " when creating board center 
