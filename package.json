@@ -1,0 +1,26 @@
+{
+  "name": "nodejs-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest --coverage --verbose",
+    "test:watch": "npm run test -- --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nataliajl/nodejs-template.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nataliajl/nodejs-template/issues"
+  },
+  "homepage": "https://github.com/nataliajl/nodejs-template#readme",
+  "devDependencies": {
+    "jest": "^29.4.1"
+  }
+}
