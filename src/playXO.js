@@ -6,4 +6,13 @@ const generateSeparator = () => {
     return '-+-+-';
 }
 
-module.exports = { generateBlock, generateSeparator };
+const generateCenter = () => {
+    const center = [];
+    center.push(generateSeparator());
+    center.push(generateBlock());
+    center.push(generateSeparator());
+
+    return center;
+}
+
+module.exports = { generateBlock, generateSeparator, generateCenter };
