@@ -1,4 +1,4 @@
-const { generateBlock, generateSeparator, generateCenter } = require('../src/playXO');
+const { generateBlock, generateSeparator, generateCenter, generateBoard } = require('../src/playXO');
 
 describe('Validate Tic-Tac-Toe Game', () => {
 
@@ -12,5 +12,9 @@ describe('Validate Tic-Tac-Toe Game', () => {
 
     test('should return "-+-+-", " | | ", "-+-+-"  with break after each line when creating board center', () => {
         expect(generateCenter()).toStrictEqual('-+-+-\n | | \n-+-+-\n');
+    });
+
+    test('should return " | | ", "-+-+-", " | | ", "-+-+-", " | | " with break after each line when creating board center', () => {
+        expect(generateBoard()).toStrictEqual(' | | \n-+-+-\n | | \n-+-+-\n | | \n');
     });
 });
