@@ -10,7 +10,7 @@ describe('Validate Tic-Tac-Toe Game', () => {
         expect(generateSeparator()).toBe('-+-+-');
     });
 
-    test('should return " | | ", "-+-+-", " | | ", "-+-+-", " | | " with break after each line when creating board center', () => {
-        expect(generateBoard()).toStrictEqual(' | | \n-+-+-\n | | \n-+-+-\n | | ');
+    test('should return a list with " | | ", "-+-+-", " | | ", "-+-+-", " | | " with break after each line when creating board center', () => {
+        expect(generateBoard()).toStrictEqual([' | | ', '-+-+-', ' | | ', '-+-+-', ' | | ']);
     });
 });
