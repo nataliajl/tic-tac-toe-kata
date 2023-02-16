@@ -16,9 +16,11 @@ const generateCenter = () => {
 }
 
 const generateBoard = () => {
-    let board = [];
+    let board = '';
     board += generateBlock();
-    board += generateCenter();
+    board += generateSeparator();
+    board += generateBlock();
+    board += generateSeparator();
     board += generateBlock();
 
     return board;
