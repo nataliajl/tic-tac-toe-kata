@@ -1,18 +1,20 @@
 const generateBlock = () => {
-    return ' | | ';
+    return ' | | \n';
 }
 
 const generateSeparator = () => {
-    return '-+-+-';
+    return '-+-+-\n';
 }
 
 const generateCenter = () => {
-    const center = [];
-    center.push(generateSeparator());
-    center.push(generateBlock());
-    center.push(generateSeparator());
+    let center = "";
+    center += generateSeparator();
+    center += generateBlock();
+    center += generateSeparator();
 
     return center;
 }
+
+
 
 module.exports = { generateBlock, generateSeparator, generateCenter };
