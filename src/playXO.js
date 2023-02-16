@@ -17,8 +17,7 @@ const generateBoard = () => {
     return board;
 }
 
-const blockSquare = (player, squareNumber) => {
-    if (squareNumber == 1)
+const blockSquare = (player) => {
         return `${player}| | `;
 }
 
