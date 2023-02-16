@@ -15,6 +15,13 @@ const generateCenter = () => {
     return center;
 }
 
+const generateBoard = () => {
+    let board = [];
+    board += generateBlock();
+    board += generateCenter();
+    board += generateBlock();
 
+    return board;
+}
 
-module.exports = { generateBlock, generateSeparator, generateCenter };
+module.exports = { generateBlock, generateSeparator, generateCenter, generateBoard };
