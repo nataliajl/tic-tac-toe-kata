@@ -15,6 +15,6 @@ describe('Validate Tic-Tac-Toe Game', () => {
     });
 
     test('should return "X| | " when player X choose 1th gap at block', () => {
-        expect(blockSquare("X", 1)).toBe("X| | ");
+        expect(blockSquare("X")).toBe("X| | ");
     });
 });
