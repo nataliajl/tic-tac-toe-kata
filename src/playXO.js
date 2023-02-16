@@ -17,4 +17,9 @@ const generateBoard = () => {
     return board;
 }
 
-module.exports = { generateBlock, generateSeparator, generateBoard };
+const blockSquare = (player, squareNumber) => {
+    if (squareNumber == 1)
+        return `${player}| | `;
+}
+
+module.exports = { generateBlock, generateSeparator, generateBoard, blockSquare};
