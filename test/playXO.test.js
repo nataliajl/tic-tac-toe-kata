@@ -3,7 +3,7 @@ const { generateBlock, generateSeparator, generateCenter, generateBoard } = requ
 describe('Validate Tic-Tac-Toe Game', () => {
 
     test('should return " | | " when creating block', () => {
-        expect(generateBlock()).toBe(' | | \n');
+        expect(generateBlock()).toBe(' | | ');
     });
 
     test('should return "-+-+-" when creating separator', () => {
@@ -11,6 +11,6 @@ describe('Validate Tic-Tac-Toe Game', () => {
     });
 
     test('should return " | | ", "-+-+-", " | | ", "-+-+-", " | | " with break after each line when creating board center', () => {
-        expect(generateBoard()).toStrictEqual(' | | \n-+-+-\n | | \n-+-+-\n | | \n');
+        expect(generateBoard()).toStrictEqual(' | | \n-+-+-\n | | \n-+-+-\n | | ');
     });
 });
