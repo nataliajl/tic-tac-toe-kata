@@ -7,12 +7,12 @@ const generateSeparator = () => {
 }
 
 const generateBoard = () => {
-    let board = '';
-    board += `${generateBlock()}\n`;
-    board += `${generateSeparator()}\n`;
-    board += `${generateBlock()}\n`;
-    board += `${generateSeparator()}\n`;
-    board += generateBlock();
+    let board = [];
+    board.push(generateBlock());
+    board.push(generateSeparator());
+    board.push(generateBlock());
+    board.push(generateSeparator());
+    board.push(generateBlock());
 
     return board;
 }
