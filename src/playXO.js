@@ -1,5 +1,5 @@
 const generateBlock = () => {
-    return ' | | \n';
+    return ' | | ';
 }
 
 const generateSeparator = () => {
@@ -8,9 +8,9 @@ const generateSeparator = () => {
 
 const generateBoard = () => {
     let board = '';
-    board += generateBlock();
+    board += `${generateBlock()}\n`;
     board += generateSeparator();
-    board += generateBlock();
+    board += `${generateBlock()}\n`;
     board += generateSeparator();
     board += generateBlock();
 
